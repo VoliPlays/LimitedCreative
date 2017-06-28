@@ -25,8 +25,7 @@ class Main extends PluginBase implements Listener{
    
         public function onInteract(PlayerInteractEvent $ev){
          if($this->getConfig()->get("Limited.Creative") === true){
-          $IT = $this->getConfig()->get("id");
-          if(($ev->getPlayer()->getGamemode() === 1) && ($ev->getBlock()->getId() === $IT)) $ev->setCancelled();
+          if(($ev->getPlayer()->getGamemode() === 1) && ($ev->getBlock()->getId() === $this->getConfig()->get("id"))) $ev->setCancelled();
          }
         }
 }
