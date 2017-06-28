@@ -1,8 +1,8 @@
 <?php
 
-// Storm Nation Plugins ,Join Now :
-// ip : pe.stormnation.us
-// port : 19132
+# Storm Nation Plugins ,Join Now :
+# ip : pe.stormnation.us
+# port : 19132
 namespace herojhjh;
  
 use pocketmine\Player;
