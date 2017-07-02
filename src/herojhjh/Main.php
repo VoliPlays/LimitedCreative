@@ -20,12 +20,14 @@ class Main extends PluginBase implements Listener{
             @mkdir($this->getDataFolder());
             $this->saveDefaultConfig();
             $this->reloadConfig();
-            $this->getLogger()->info("Enabled Plugin");
+            $this->getLogger()->info("Enable Plugin");
         }
    
         public function onInteract(PlayerInteractEvent $ev){
          if($this->getConfig()->get("Limited.Creative") === true){
-          if(($ev->getPlayer()->getGamemode() === 1) && ($ev->getBlock()->getId() === $this->getConfig()->get("id"))) $ev->setCancelled();
+          if(($ev->getPlayer()->getGamemode() === 1) && ($ev->getBlock()->getId() === $this->getConfig()->get("id"))){
+           $ev->setCancelled(true);
+          }
          }
         }
 }
