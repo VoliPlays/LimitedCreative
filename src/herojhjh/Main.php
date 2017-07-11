@@ -12,7 +12,6 @@ use pocketmine\utils\{TextFormat, Config};
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\item\ItemBlock;
 use pocketmine\permission\Permission;
-use pocketmine\utils\TextFormat;
  
 class Main extends PluginBase implements Listener{
         public function onEnable(){
